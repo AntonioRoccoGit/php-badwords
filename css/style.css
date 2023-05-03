@@ -1,0 +1,17 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+p {
+    margin-top: 1rem;
+    line-height: 1.4rem;
+}
+
+.spazio {
+    margin-left: 2rem;
+    background-color: lightcoral;
+    padding: .4rem;
+    border-radius: 10px;
+}
