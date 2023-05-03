@@ -15,17 +15,43 @@ $text_censord = str_replace($censored_word, $censored, $text);
     <title>Document</title>
 </head>
 
+<style>
+    p {
+        margin-top: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .spazio {
+        margin-left: 2rem;
+        background-color: lightcoral;
+        padding: .4rem;
+        border-radius: 10px;
+    }
+</style>
+
 <body>
+    <h2>Testo Originale</h2>
     <p>
         <?php
-        echo "$text $censored_word";
+        echo $text;
         ?>
+        <span class="spazio">
+            <?php
+            echo "Il paragrafo è lungo: " . strlen($text) . " caratteri";
+            ?>
+        </span>
     </p>
+    <h2>Teso censurato</h2>
     <p>
         <?php
         echo $text_censord;
 
         ?>
+        <span class="spazio">
+            <?php
+            echo "Il nuovo paragrafo è lungo: " . strlen($text_censord) . " caratteri";
+            ?>
+        </span>
     </p>
 </body>
 
